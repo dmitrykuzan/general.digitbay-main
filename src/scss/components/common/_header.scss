@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 9.5rem;
+  background-color: var(--clr-default-600);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: em(575)) {
+    min-height: 6.5rem;
+  }
+}

@@ -1,0 +1,39 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+
+.title {
+  font-size: fluid-font(2rem, 1.4rem);
+}
+
+.main__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  min-width: 28rem;
+  min-height: 5rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 100%;
+  color: var(--clr-default-800);
+  background-color: var(--clr-primary-500);
+  transition: background-color var(--transition);
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--clr-primary-400);
+      transition: background-color var(--transition);
+    }
+  }
+}
